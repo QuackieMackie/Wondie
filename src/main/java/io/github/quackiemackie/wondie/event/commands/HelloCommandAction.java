@@ -1,4 +1,4 @@
-package net.pathoscraft.pathosbot.event.commands;
+package io.github.quackiemackie.wondie.event.commands;
 
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 

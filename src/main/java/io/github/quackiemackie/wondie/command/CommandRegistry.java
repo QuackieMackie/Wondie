@@ -1,10 +1,10 @@
-package net.pathoscraft.pathosbot.command;
+package io.github.quackiemackie.wondie.command;
 
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
-import net.pathoscraft.pathosbot.event.commands.HelloCommandAction;
+import io.github.quackiemackie.wondie.event.commands.HelloCommandAction;
 
 import java.util.HashMap;
 import java.util.List;

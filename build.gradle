@@ -1,5 +1,3 @@
-import org.hidetake.groovy.ssh.core.Remote
-
 plugins {
     id 'java'
     id 'application'
@@ -8,7 +6,7 @@ plugins {
     id("co.uzzu.dotenv.gradle") version "4.0.0"
 }
 
-group = 'net.pathoscraft.pathosbot'
+group = 'io.github.quackiemackie.wondie'
 version = '1.0.0'
 
 repositories {
@@ -27,7 +25,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'net.pathos.pathosbot.PathosBot'
+    mainClass = 'io.github.quackiemackie.wondie.Main'
 }
 
 tasks.withType(JavaCompile).configureEach {

@@ -1,4 +1,4 @@
-package net.pathoscraft.pathosbot.event.message;
+package io.github.quackiemackie.wondie.event.message;
 
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
