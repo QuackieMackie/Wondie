@@ -1,5 +1,6 @@
 package io.github.quackiemackie.wondie.command;
 
+import io.github.quackiemackie.wondie.event.commands.CollatzCommandAction;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
@@ -25,6 +26,12 @@ public class CommandRegistry {
                     String message = event.getOption("message") != null ? Objects.requireNonNull(event.getOption("message")).getAsString() : "No message provided";
                     event.reply("You said: " + message).queue();
                 }
+        );
+
+        commands.put(
+                Commands.slash("collatz", "Calculate the Collatz sequence for a given number.")
+                        .addOption(OptionType.INTEGER, "number", "The number to calculate the Collatz sequence for.", true),
+                CollatzCommandAction::handle
         );
     }
 
